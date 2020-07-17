@@ -1,1 +1,1 @@
- >> Odoo Practica con JS
+ >> Odoo Practica con Js
