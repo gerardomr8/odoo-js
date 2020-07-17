@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Widgets for website',
+    'name': 'Widgets gerardo',
     'summary': 'Simple custom format for account invoice cfdi',
     'version': '1.0',
     'category': 'Website',

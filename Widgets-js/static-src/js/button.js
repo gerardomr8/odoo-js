@@ -1,5 +1,5 @@
 
-odoo.define('Widgets-js.button', (require) => {
+odoo   .define('Widgets-js.button', (require) => {
 
 	const { Widget, registry } = require('web.public.widget');
 	const Dialog = require('web.Dialog');
@@ -9,7 +9,13 @@ odoo.define('Widgets-js.button', (require) => {
 		events: {
 			'click button': 'clickEvent',
 		},
-		clickEvent (ev) {
+		start (){  //Representa el ciclo de vida de un widget
+			this._super(...arguments);
+			new ClipboardJS(this.el, {
+				text: () => document.location.origin + this.el.dataset.url 
+			});
+		},
+		clickEvent (ev) { //Metodo evento
 			Dialog.alert(
 				this,
 				'Has copiado la URL de tu producto',
