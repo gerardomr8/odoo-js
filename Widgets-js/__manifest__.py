@@ -7,7 +7,7 @@
     'author': 'Quadit, ',
     'website': 'https://www.quadit.mx',
     'license': 'LGPL-3',
-    'depends': ['website_sale'],
+    'depends': ['website_sale', 'web', 'website', 'product',],
     'sequence': 1,
     'demo': [],
     'data': [
