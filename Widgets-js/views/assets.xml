@@ -3,10 +3,14 @@
 	<template id="assets_frontend" inherit_id="website.assets_frontend">
 		<xpath expr="//script[last()]" position="after">
 			<script src="/Widgets-js/static-src/js/button.js"></script>
+			<script src="/Widgets-js/static-src/js/chatter.js"></script>
+		</xpath>
+		<xpath expr="//script[last()]" position="after">
+			<link rel="stylesheet" href="/Widgets-js/static-src/sass/chatter.scss"/>
 		</xpath>
 	</template>
 
-		<template id="assets_backend" inherit_id="web.assets_backend">
+	<template id="assets_backend" inherit_id="web.assets_backend">
 		<xpath expr="//script[last()]" position="after">
 			<script src="/Widgets-js/static-src/js/field.js"></script>
 		</xpath>

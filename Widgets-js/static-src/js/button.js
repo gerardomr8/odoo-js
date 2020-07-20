@@ -17,7 +17,7 @@ odoo.define('Widgets-js.button', (require) => {
 		},
 		async clickEvent () {
 			await this._rpc({
-				route: '/update/share/count',
+				route: '/update/share_count',
 				params: { product_id: this.el.dataset.id}
 			});
 			Dialog.alert(

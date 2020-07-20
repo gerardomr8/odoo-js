@@ -1,0 +1,39 @@
+$shadow: 1px 1px 3px 0.4px grey;
+
+.o_portal_chatter_composer_form {
+    textarea, &:focus {
+        box-shadow: $shadow !important;
+        border-radius: .5px;
+        border: none;
+        resize: none;
+        background-color: rgba(209, 195, 158, 0.17) !important;
+    }
+    button {
+        border-radius: 1px;
+        box-shadow: $shadow;
+        float: right;
+        margin-left: 10px
+    }
+}
+.o_portal_chatter_composer {
+    .o_portal_chatter_avatar {
+        border-radius: 20px;
+        margin-top: 1px;
+        @include size(55px);
+        animation-name: blinking;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+    }
+}
+
+@keyframes blinking {
+    0% {
+        box-shadow: 0 0 0px 0.4px transparent;
+    }
+    30% {
+        box-shadow: 0 0 10px 0.9px cadetblue;
+    }
+    100% {
+        box-shadow: 0 0 0px 0.4px transparent;
+    }
+}

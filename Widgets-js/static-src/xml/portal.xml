@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-extend="portal.Composer">
+        <t t-jquery="button:last-of-type" t-operation="after">
+            <button class="btn btn-danger">Cancelar</button>
+        </t>
+    </t>
+</templates>
+
