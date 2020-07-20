@@ -20,6 +20,6 @@ odoo.define('Widgets-js.chatter', (require) => {
 			return true;
 		},
 	}); 
-
+	console.warn("Epale") //Mensaje en consola de que entra a fields.ja
 	registry.add('share_count_widget', FieldForShare);
 });
