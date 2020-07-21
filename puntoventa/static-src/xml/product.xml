@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding="UTF-8"?>
+<templates id="template_products" xml:space="preserve">
+	<t t-extend="Product">
+		<t t-jquery="article" t-operation="append">
+			<i t-if="product.pos_favorite" class="fa fa-gratipay"/>
+		</t>
+		<t t-jquery="article">
+			this.get(0).removeAttribute('class');
+		</t>
+		<t t-jquery="article" t-operation="attributes">
+			<attribute name="t-attf-class">product {{product.pos_favorite ? 'green-box' : ''}}
+			</attribute>
+		</t>
+	</t>
+</templates>

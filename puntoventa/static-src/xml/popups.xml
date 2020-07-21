@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template_popups" xml:space="preserve">
+	<t t-name="puntoventa.carrier.popup">
+        <div role="dialog" class="modal-dialog">
+            <div class="popup popup-alert shipping">
+                <p class="title">Delivery method</p>
+                <p class="body">
+                    <ul>
+                        <t t-foreach="widget.pos.db.carriers" t-as="carrier">
+                            <li t-att-data-id="carrier.id">
+                                <t t-esc="carrier.name"/>
+                            </li>
+                        </t>
+                    </ul>
+                </p>
+                <div class="footer">
+                    <div class="button cancel">
+                        Cancel
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>
